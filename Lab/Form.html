@@ -14,9 +14,10 @@
   <form method="post">
 
 
-      <h1>Donor Information</h1>
+  
 
       <table>
+        <h1>Donor Information</h1>
         <tr>
           <td><label for="firstName">First Name*</label></td>
           <td><input type="text" id="firstName" name="firstName" required></td>
@@ -116,14 +117,116 @@
             <input type="number" name="months" >Months
           </td>
         </tr>
+
+
+
+      </table>
+
+
+
+      <table>
+       <h1>Honorarium and Memorial donation Information</h1> 
+          <tr>
+          <td><label>I would like to make this <br>donation</label></td>
+            <td>
+              <label><input type="radio" name="donation" value="to-honor"> To Honor</label><br>
+              <label><input type="radio" name="donation" value="in-memory-of" > In Memory of</label>
+          
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name" name="name" ></td>
+          </tr>
+
+          <tr>
+            <td><label for="ack">Acknowledge Donation to</label></td>
+            <td><input type="text" id="ack" name="ack" ></td>
+          </tr>
+          <tr>
+            <td><label for="add">Address</label></td>
+            <td><input type="text" id="add" name="add" ></td>
+          </tr>
+          <tr>
+            <td><label for="hcity">City</label></td>
+            <td><input type="text" id="hcity" name="hcity" ></td>
+          </tr>
+
+          <tr>
+          <td><label for="state">State</label><br></td>
+          <td><select id="state" name="state" >
+              <option value="">-- Select a State --</option>
+              <option value="dhaka">Dhaka</option>
+              <option value="khulna">Khulna</option>
+              <option value="rajshahi">Rajshahi</option>
+            </select></td>
+        </tr>
         <tr>
-          <td></td>
-          <td><button type="reset">Reset</button>
-          <button type="continue">continue</button></td>
+          <td><label for="hzip">Zip Code</label></td>
+          <td><input type="number" id="hzip" name="hzip" ></td>
         </tr>
       </table>
 
-      </table>
+      <table>
+        <h1>Additional Information</h1>
+        <tr>
+          <td><label>Please enter your name, company or organization as you would like it to appear in our publications:</label></td>
+          <tr>
+            <td><label for="Cname">Name</label>
+            <input type="text" id="Cname" name="Cname"></input></td>
+          </tr>
+          <tr>
+            <td>
+              <label><input type="checkbox" name="gift" value="gift"> I would like my gift to remain anonymous.</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><input type="checkbox" name="matching-gift" value="matching-gift"> My employer offers a matching gift program. I will mail the matching gift form.</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><input type="checkbox" name="ack-gift" value="ack-gift"> Please save the cost of acknowledging this gift by not mailing a thank you letter.</label>
+            </td>
+          </tr>
+        </tr>
+         <tr>
+          <td><label for="comments">Comments</label>
+          <br>(Please type any questions or feedback here)</td>
+          <td><textarea id="message" name="message" rows="5" cols="30"
+              placeholder="Write your message here..."></textarea></td>
+        </tr>
+        <tr>
+          <td><label>How may we contact you?</label></td>
+            <td>
+              <input type="checkbox" name="contact" value="email"> E-mail <br>
+              <input type="checkbox" name="contact" value="postal"> Postal Mail <br>
+              <input type="checkbox" name="contact" value="telephone"> Telephone <br>
+              <input type="checkbox" name="contact" value="fax"> Fax
+            </td>
+          </tr>
+          <tr>
+              <td> I would like to receive newsletters and information about special events by:<br>
+                  <input type="checkbox" name="newsletter" value="email"> E-mail <br>
+                  <input type="checkbox" name="newsletter" value="postal"> Postal Mail
+              </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+                <input type="checkbox" name="volunteer" value="yes">
+                I would like information about volunteering.
+            </td>
+          </tr>
+
+
+        </tr>
+      </table>  
+      <tr>
+          <td></td>
+          <td><button type="reset">Reset</button>
+          <button type="submit">Continue</button></td>
+      </tr>
 
   </form>
 
