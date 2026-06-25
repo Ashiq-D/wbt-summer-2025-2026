@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Two</title>
+</head>
+
+<body>
+
+  <form class="card">
+
+    <h2>Registration</h2>
+    <p>Please complete all fields below.</p>
+    <div class="field">
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="fname"  placeholder="Jace Targaryen" required>
+    </div>
+    <div class="field">
+      <label for="postalCode">Postal Code</label>
+      <input type="number" id="postalcode" name="postalcode" placeholder="10001" required>
+    </div>
+    <div class="field">
+      <label for="dob">Date of Birth</label>
+      <input type="dateoftime" id="dob" name="dob" placeholder="25/05/2000" required>
+    </div>
+    <div class="field">
+      <label for="email">Email Address  </label>
+      <input type="email" id="email" name="email"  placeholder="jace@example.com" required />
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"  placeholder="*******" required />
+    </div>
+    <div class="field">
+      <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select a Country --</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+        </select>
+    </div>
+    <div class="S-field">
+      <button type="submit" class="b1">Submit</button>
+      <button type="reset" class="b2">Reset</button>
+    </div>
+
+  </form>
+
+
+
+</body>
+
+</html>
